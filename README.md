@@ -68,3 +68,26 @@ Current list of .chts
 
 - [git](git)
 - [xmonad][xmonad]
+
+
+
+Examples of .chts
+----------------------
+```type``` command example (git - version controll system):
+
+```
+git =|= basics =|= git init                    =|= Initialize a repository                            =|= type
+git =|= basics =|= git status                  =|= Show status of working tree                        =|= type
+git =|= basics =|= git add file.txt             =|= Start tracking file.txt                             =|= type
+git =|= basics =|= git add main.txt            =|= Stage modified file main.txtt                        =|= type
+```
+
+```key``` command example (xmonad - tiling windows manager):
+
+```
+xmonad =|= System =|= Super_L+q                        =|= Restart XMonad                         =|= type
+xmonad =|= System =|= Super_L+ctrl+q                   =|= Rebuild & restart XMonad               =|= key
+xmonad =|= System =|= Super_L+shift+q                  =|= Quit XMonad                            =|= key
+xmonad =|= System =|= Super_L+x                        =|= Lock screen                            =|= key
+```
+
