@@ -5,7 +5,7 @@ Applications cheatsheets/cheatfiles that can use both key combinations or typing
 
 .chts how to use:
 -----------------
-It is recomended to clone into your ```~/``` directory, or maintain as part of your ```dotfiles```
+It is recomended to clone ( or fork and then clone if you plan to have some own customization)  this repo into your ```~/``` directory, or maintain as part of your ```dotfiles```.
 
 e.g 
 rofi-chts primary will search for cheatsheets/cheatfiles in ```~/.chts``` direcotry
