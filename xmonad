@@ -1,0 +1,12 @@
+xmonad =|= workspace =|= Super_L+[n]                  =|= Go to workspace [n]                    =|= key
+xmonad =|= system =|= Super_L+q                        =|= Restart XMonad                         =|= key
+xmonad =|= system =|= Super_L+ctrl+q                   =|= Rebuild & restart XMonad               =|= key
+xmonad =|= system =|= Super_L+shift+q                  =|= Quit XMonad                            =|= key
+xmonad =|= system =|= Super_L+x                        =|= Lock screen                            =|= key
+xmonad =|= actions =|= Super_L+a                       =|= Notify w current X selection           =|= key
+xmonad =|= launcher =|= Super_L+t                      =|= File Manager                           =|= key
+xmonad =|= system =|= Super_L+ctrl+q                   =|= Rebuild & restart XMonad               =|= key
+xmonad =|= system =|= Super_L+shift+q                  =|= Quit XMonad                            =|= key
+xmonad =|= system =|= Super_L+x                        =|= Lock screen                            =|= key
+xmonad =|= actions =|= Super_L+a                       =|= Notify w current X selection           =|= key
+xmonad =|= launcher =|= Super_L+t                      =|= File Manager                           =|= key
