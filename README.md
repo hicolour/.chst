@@ -24,7 +24,7 @@ File format and its versions
 
 | File format version              | Format Defintion                                                           | 
 | -------------------------------- |:-------------------------------------------------------------------------:| 
-| `0.0.1`                          | ```Category =|= Subcategory =|= Command =|= Description =|= Action Type```|
+| `0.0.1`                          | ```Category =\|= Subcategory =\|= Command =\|= Description =\|= Action Type```|
 
 
 Command & Action Type
