@@ -4,11 +4,14 @@ Applications cheatsheets/cheatfiles and its model, that can used both key combin
 
 .chts how to use:
 -----------------
+(A)
 It is recomended to clone ( or fork and then clone if you plan to have some own customization)  this repo into your ```~/``` directory, or maintain as part of your ```dotfiles```.
 
 e.g 
 rofi-chts primary will search for cheatsheets/cheatfiles in ```~/.chts``` direcotry
 
+(B)
+It is recomended to use rofi-chts application as .chts browser (rofi-chts is just tiny [rofi](https://github.com/DaveDavenport/rofi) extension)
 
 .chts about itself:
 -----------------
