@@ -1,6 +1,6 @@
 .chts
 =======
-Applications cheatsheets/cheatfiles and its model, that can use both key combinations or typing.
+Applications cheatsheets/cheatfiles and its model, that can used both key combinations or typing.
 
 Key priciples:
  - Single line & simple command
