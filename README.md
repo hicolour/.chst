@@ -36,6 +36,10 @@ File format and its versions
 | `0.0.1`                          | ```Category =\|= Subcategory =\|= Command =\|= Description =\|= Action Type```|
 
 
+Possible on roadmap:
+ - Special character e.g. $ that could be used for placeholder for user input (need to verify if it makes sense on daily basis rutine)
+
+
 Command & Action Type
 -----------------
 How ```Comamnd``` are interpreted depends on ```Action Type```  
@@ -46,14 +50,18 @@ Currently there are two actions types:
  - ```type```- inform .chts browser that command should be executed just by regular letter typing (e.g. in previously focued window/console)
 
 If the ```key``` action type is used, command should contains key combination that is based on the X Keysym strings e.g.
+
 ```
 Super_l+n
 
 ```
+
 If the ```type``` action type is used, command can conatins any text e.g.
 ```
 git status
 ```
+
+
 
 Current list of .chts
 ----------------------
