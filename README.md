@@ -1,6 +1,15 @@
 .chts
 =======
-Applications cheatsheets that can use both key combinations or typing.
+Applications cheatsheets/cheatfiles that can use both key combinations or typing.
+
+
+.chts how to use:
+-----------------
+It is recomended to clone into your ```~/``` directory, or maintain as part of your ```dotfiles```
+
+e.g 
+rofi-chts primary will search for cheatsheets/cheatfiles in ```~/.chts``` direcotry
+
 
 .chts about itself:
 -----------------
@@ -49,5 +58,5 @@ git status
 Current list of .chts
 ----------------------
 
-- [git]()
+- [git](git)
 - [xmonad][xmonad]
