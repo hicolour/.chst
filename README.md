@@ -2,13 +2,6 @@
 =======
 Applications cheatsheets/cheatfiles and its model, that can used both key combinations or typing.
 
-Key priciples:
- - Single line & simple command
- - Single line, simple & easy searchable intuitive description
-
-This is not inteded to be few-lines per command, or documenetation style formart.
-
-
 .chts how to use:
 -----------------
 It is recomended to clone ( or fork and then clone if you plan to have some own customization)  this repo into your ```~/``` directory, or maintain as part of your ```dotfiles```.
@@ -23,7 +16,13 @@ rofi-chts primary will search for cheatsheets/cheatfiles in ```~/.chts``` direco
 PDF or HTML cheatsheets are not very usable and therfe is strong need for interactive easly searchable cheatsheets.
 As simple as possible, text based cheatsheets are the fundamenetal building block of final solution. 
 
-.chts format was orginaly designed mainly for [rofi](https://github.com/DaveDavenport/rofi) - a window switcher & application launcher  , simply more advanced dmenu -  and its extension rofi-chts.
+Key priciples:
+ - Single line & simple command
+ - Single line, simple & easy searchable intuitive description
+
+This is not inteded to be few-lines per command, or documenetation style formart.
+
+.chts format/model was orginaly designed mainly for [rofi](https://github.com/DaveDavenport/rofi) - a window switcher & application launcher  , simply more advanced dmenu -  and its extension rofi-chts.
 
 Format is more or less generic and can be used by any type of software that will be able to cosume it as a source of commands or key combinanations cheatsheets.
 
