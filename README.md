@@ -38,6 +38,8 @@ File format and its versions
 
 Possible on roadmap:
  - Special character e.g. $ that could be used for placeholder for user input (need to verify if it makes sense on daily basis rutine)
+ - Action type ```run``` for running application (need to verify if it makes sense on daily basis rutine)
+
 
 
 Command & Action Type
