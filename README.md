@@ -4,13 +4,13 @@ Applications cheatsheets/cheatfiles and its model, that can used both key combin
 
 .chst how to use:
 -----------------
-(A)
+(Step 1)
 It is recomended to clone ( or fork and then clone if you plan to have some own customization)  this repo into your ```~/``` directory, or maintain as part of your ```dotfiles```.
 
 e.g
-[rchst](https://github.com/hicolour/rchst) primary will search for cheatsheets/cheatfiles in ```~/.chst``` direcotry
+[rchst](https://github.com/hicolour/rchst) primary will search for cheatsheets/cheatfiles in ```~/.pchst``` &  ```~/.chst``` direcotries, and will prioritize the files from  ```~/.pchst``` - personal chst, the one you may not want to share with whole world.
 
-(B)
+(Step 2)
 It is recomended to use [rchst](https://github.com/hicolour/rchst)application as .chst browser ([rchst](https://github.com/hicolour/rchst) is just tiny [rofi](https://github.com/DaveDavenport/rofi) extension)
 
 .chst about itself:
@@ -63,11 +63,15 @@ Currently there are two actions types:
 
 
 If the ```key``` action type is used, command should contains key combination that is based on the X Keysym strings e.g.
+S
 
 ```
 Super_l+n
 
 ```
+
+
+
 
 If the ```type``` action type is used, command can conatins any text e.g.
 ```
