@@ -2,8 +2,8 @@
 ======
 
 __What .chst is?__
- * ProgProgrammable cheatsheets/cheatfiles model defintion that can used both  for key combinations or typing.
- * Applications cheatsheets/cheatfiles with default keybindings or commands
+ * Programmable & automated cheatsheets/cheatfiles actions model defintion that can used both  for key combinations or typing.
+ * Applications cheatsheets/cheatfiles actions with default keybindings or commands
 
 
 .chst how to use:
