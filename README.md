@@ -7,7 +7,7 @@ Applications cheatsheets/cheatfiles and its model, that can used both key combin
 (A)
 It is recomended to clone ( or fork and then clone if you plan to have some own customization)  this repo into your ```~/``` directory, or maintain as part of your ```dotfiles```.
 
-e.g 
+e.g
 [rchst](https://github.com/hicolour/rchst) primary will search for cheatsheets/cheatfiles in ```~/.chst``` direcotry
 
 (B)
@@ -17,7 +17,7 @@ It is recomended to use [rchst](https://github.com/hicolour/rchst)application as
 -----------------
 
 PDF or HTML cheatsheets are not very usable and therfe is strong need for interactive easly searchable cheatsheets.
-As simple as possible, text based cheatsheets are the fundamenetal building block of final solution. 
+As simple as possible, text based cheatsheets are the fundamenetal building block of final solution.
 
 Key priciples:
  - Single line & simple command
@@ -39,8 +39,8 @@ Documenenation browsing
 File format and its versions
 --------
 
-| File format version              | Format Defintion                                                           | 
-| -------------------------------- |:-------------------------------------------------------------------------:| 
+| File format version              | Format Defintion                                                           |
+| -------------------------------- |:-------------------------------------------------------------------------:|
 | `0.0.1`                          | ```Category =\|= Subcategory =\|= Command =\|= Description =\|= Action Type```|
 
 
@@ -58,6 +58,9 @@ Currently there are two actions types:
 
  - ```key``` - inform .chst browser that command should be executed as key press  
  - ```type```- inform .chst browser that command should be executed just by regular letter typing (e.g. in previously focued window/console)
+ - ```input+key``` - inform .chst browser that command should be executed as key press, but before that browser should ask user for input parameters defined in command
+ - ```input+type``` - inform .chst browser that command should be executed just by regular letter typing, but before that browser should ask user for input parameters defined in command   
+
 
 If the ```key``` action type is used, command should contains key combination that is based on the X Keysym strings e.g.
 
@@ -70,6 +73,9 @@ If the ```type``` action type is used, command can conatins any text e.g.
 ```
 git status
 ```
+
+
+
 
 
 
@@ -100,4 +106,3 @@ xmonad =|= System =|= Super_L+ctrl+q           =|= Rebuild & restart XMonad     
 xmonad =|= System =|= Super_L+shift+q          =|= Quit XMonad                       =|= key
 xmonad =|= System =|= Super_L+x                =|= Lock screen                       =|= key
 ```
-
