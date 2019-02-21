@@ -1,19 +1,19 @@
-.chts
+.chst
 =======
 Applications cheatsheets/cheatfiles and its model, that can used both key combinations or typing.
 
-.chts how to use:
+.chst how to use:
 -----------------
 (A)
 It is recomended to clone ( or fork and then clone if you plan to have some own customization)  this repo into your ```~/``` directory, or maintain as part of your ```dotfiles```.
 
 e.g 
-rofi-chts primary will search for cheatsheets/cheatfiles in ```~/.chts``` direcotry
+[rchst](https://github.com/hicolour/rchst) primary will search for cheatsheets/cheatfiles in ```~/.chst``` direcotry
 
 (B)
-It is recomended to use rofi-chts application as .chts browser (rofi-chts is just tiny [rofi](https://github.com/DaveDavenport/rofi) extension)
+It is recomended to use [rchst](https://github.com/hicolour/rchst)application as .chst browser ([rchst](https://github.com/hicolour/rchst) is just tiny [rofi](https://github.com/DaveDavenport/rofi) extension)
 
-.chts about itself:
+.chst about itself:
 -----------------
 
 PDF or HTML cheatsheets are not very usable and therfe is strong need for interactive easly searchable cheatsheets.
@@ -25,11 +25,11 @@ Key priciples:
 
 This is not inteded to be few-lines per command, or documenetation style formart.
 
-.chts format/model was orginaly designed mainly for [rofi](https://github.com/DaveDavenport/rofi) - a window switcher & application launcher  , simply more advanced dmenu -  and its extension rofi-chts.
+.chst format/model was orginaly designed mainly for [rofi](https://github.com/DaveDavenport/rofi) - a window switcher & application launcher  , simply more advanced dmenu -  and its extension [rchst](https://github.com/hicolour/rchst).
 
 Format is more or less generic and can be used by any type of software that will be able to cosume it as a source of commands or key combinanations cheatsheets.
 
-.chts alternatives
+.chst alternatives
 -----------------
 
 Documenenation browsing
@@ -56,8 +56,8 @@ How ```Comamnd``` are interpreted depends on ```Action Type```
 
 Currently there are two actions types:
 
- - ```key``` - inform .chts browser that command should be executed as key press  
- - ```type```- inform .chts browser that command should be executed just by regular letter typing (e.g. in previously focued window/console)
+ - ```key``` - inform .chst browser that command should be executed as key press  
+ - ```type```- inform .chst browser that command should be executed just by regular letter typing (e.g. in previously focued window/console)
 
 If the ```key``` action type is used, command should contains key combination that is based on the X Keysym strings e.g.
 
@@ -73,7 +73,7 @@ git status
 
 
 
-Current list of .chts
+Current list of .chst
 ----------------------
 
 - [git](git)
@@ -81,7 +81,7 @@ Current list of .chts
 
 
 
-Examples of .chts
+Examples of .chst
 ----------------------
 ```type``` command example (git - version controll system):
 
