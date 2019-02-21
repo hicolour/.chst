@@ -1,6 +1,10 @@
 .chst
-=======
-Applications cheatsheets/cheatfiles and its model, that can used both key combinations or typing.
+======
+
+__What .chst is?__
+ * ProgProgrammable cheatsheets/cheatfiles model defintion that can used both  for key combinations or typing.
+ * Applications cheatsheets/cheatfiles with default keybindings or commands
+
 
 .chst how to use:
 -----------------
@@ -86,8 +90,8 @@ git status
 Current list of .chst
 ----------------------
 
-- [git](git)
-- [xmonad][xmonad]
+- [git](git) -  Git default commands
+- [xmonad](xmonad) - Xmonad Default key bindings
 
 
 
