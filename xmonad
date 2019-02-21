@@ -1,12 +1,30 @@
-xmonad =|= workspace =|= Super_L+[n]                  =|= Go to workspace [n]                    =|= key
-xmonad =|= system =|= Super_L+q                        =|= Restart XMonad                         =|= key
-xmonad =|= system =|= Super_L+ctrl+q                   =|= Rebuild & restart XMonad               =|= key
-xmonad =|= system =|= Super_L+shift+q                  =|= Quit XMonad                            =|= key
-xmonad =|= system =|= Super_L+x                        =|= Lock screen                            =|= key
-xmonad =|= actions =|= Super_L+a                       =|= Notify w current X selection           =|= key
-xmonad =|= launcher =|= Super_L+t                      =|= File Manager                           =|= key
-xmonad =|= system =|= Super_L+ctrl+q                   =|= Rebuild & restart XMonad               =|= key
-xmonad =|= system =|= Super_L+shift+q                  =|= Quit XMonad                            =|= key
-xmonad =|= system =|= Super_L+x                        =|= Lock screen                            =|= key
-xmonad =|= actions =|= Super_L+a                       =|= Notify w current X selection           =|= key
-xmonad =|= launcher =|= Super_L+t                      =|= File Manager                           =|= key
+xmonad =|= actions       =|= Super_L+q                       =|= Restart XMonad                         =|= key
+xmonad =|= actions       =|= Super_L+shift+q                 =|= Quit XMonad                            =|= key
+
+xmonad =|= launchers    =|= Super_L+shift+Enter              =|= Launch Terminal                        =|= key
+xmonad =|= launchers    =|= Super_L+p                        =|= Launch demnu                           =|= key
+xmonad =|= launchers    =|= Super_L+shift+p                  =|= Launch gmrun                           =|= key
+
+xmonad =|= windows      =|= Super_L+shift+c                  =|= Close Focused window                   =|= key
+xmonad =|= windows      =|= Super_L+n                        =|= Resize window to correct size          =|= key
+xmonad =|= windows      =|= Super_L+Tab                      =|= Move focus to the next window          =|= key
+xmonad =|= windows      =|= Super_L+shift+Tab                =|= Move focus to the previous window      =|= key
+xmonad =|= windows      =|= Super_L+j                        =|= Move focus to the next window          =|= key
+xmonad =|= windows      =|= Super_L+k                        =|= Move focus to the previous window      =|= key
+xmonad =|= windows      =|= Super_L+m                        =|= Move focus to the master window        =|= key
+xmonad =|= windows      =|= Super_L+Enter                    =|= Swap the focused window with master w  =|= key
+xmonad =|= windows      =|= Super_L+shift+j                  =|= Swap the focused window with next w    =|= key
+xmonad =|= windows      =|= Super_L+shift+k                  =|= Swap the focused window with prev w    =|= key
+xmonad =|= windows      =|= Super_L+h                        =|= Shrink the master area                 =|= key
+xmonad =|= windows      =|= Super_L+l                        =|= Expand the master area                 =|= key
+xmonad =|= windows      =|= Super_L+t                        =|= Push window back into tilling          =|= key
+xmonad =|= windows      =|= Super_L+comma                    =|= Increment the number of w in master    =|= key
+xmonad =|= windows      =|= Super_L+period                   =|= Deincrement the number of w in master  =|= key
+
+xmonad =|= layout       =|= Super_L+space                    =|= Cycle all layouts                      =|= key
+xmonad =|= layout       =|= Super_L+shift+space              =|= Reset layout                           =|= key
+
+xmonad =|= workspace    =|= Super_L+[$number]                =|= Switch to workspace [$number]          =|= input+key
+xmonad =|= workspace    =|= Super_L+shift[$number]           =|= Move cleint to workspace [$number]     =|= input+key
+xmonad =|= workspace    =|= Super_L+[$[w,e,r]]]              =|= Switch to physical screens 1,2,3       =|= input+key
+xmonad =|= workspace    =|= Super_L+shift+[$[w,e,r]]]        =|= Move client to physical screens 1,2,3  =|= input+key
