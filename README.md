@@ -2,7 +2,7 @@
 ======
 
 __What .chst is?__
- * Programmable & automated cheatsheets/cheatfiles actions model defintion that can used both  for key combinations or typing.
+ * Programmable & automated cheatsheets/cheatfiles actions model defintion that can used both for key combinations or typing.
  * Applications cheatsheets/cheatfiles actions with default keybindings or commands
 
 
@@ -67,7 +67,6 @@ Currently there are two actions types:
 
 
 If the ```key``` action type is used, command should contains key combination that is based on the X Keysym strings e.g.
-S
 
 ```
 Super_l+n
@@ -75,15 +74,10 @@ Super_l+n
 ```
 
 
-
-
 If the ```type``` action type is used, command can conatins any text e.g.
 ```
 git status
 ```
-
-
-
 
 
 
@@ -100,17 +94,25 @@ Examples of .chst
 ```type``` command example (git - version controll system):
 
 ```
-git =|= basics =|= git init                    =|= Initialize a repository          =|= type
-git =|= basics =|= git status                  =|= Show status of working tree      =|= type
-git =|= basics =|= git add file.txt             =|= Start tracking file.txt           =|= type
-git =|= basics =|= git add main.txt            =|= Stage modified file main.txtt      =|= type
+git =|= basics =|= git init                                 =|= Initialize a repository                               =|= type
+git =|= basics =|= git status                               =|= Show status of working tree                           =|= type
+git =|= basics =|= git add [$file]                           =|= Start tracking [file]                                  =|= input+type
+git =|= basics =|= git add [$file]                           =|= Stage modified [file]                                   =|= input+type
+git =|= basics =|= git diff                                  =|= Show what's changed but not yet stagedt               =|= type
+git =|= basics =|= git commit                               =|= Commit changest                                       =|= type
+git =|= basics =|= git commit -a                            =|= Stage files and committ                                =|= type
+git =|= basics =|= git mv [$fiele1] [$file2]                  =|= Rename [fiele1] to [file2]                              =|= input+type
+git =|= basics =|= git fetch [$br]                          =|= Pull data from remote [br] without merging            =|= input+type
+git =|= basics =|= git pull origin [$br]                    =|= Fetch and merge branch [$br] from origin              =|= input+type
+git =|= basics =|= git clone [$url]                         =|= Create local copy of remote repository at [$url]      =|= input+type
 ```
 
 ```key``` command example (xmonad - tiling windows manager):
 
 ```
-xmonad =|= System =|= Super_L+q                =|= Restart XMonad                    =|= key
-xmonad =|= System =|= Super_L+ctrl+q           =|= Rebuild & restart XMonad          =|= key
-xmonad =|= System =|= Super_L+shift+q          =|= Quit XMonad                       =|= key
-xmonad =|= System =|= Super_L+x                =|= Lock screen                       =|= key
+xmonad =|= actions      =|= Super_L+q                       =|= Restart XMonad                         =|= key
+xmonad =|= actions      =|= Super_L+shift+q                 =|= Quit XMonad                            =|= key
+xmonad =|= launchers    =|= Super_L+shift+Enter             =|= Launch Terminal                        =|= key
+xmonad =|= launchers    =|= Super_L+p                       =|= Launch demnu                           =|= key
+xmonad =|= launchers    =|= Super_L+shift+p                 =|= Launch gmrun                           =|= key
 ```
