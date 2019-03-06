@@ -2,20 +2,27 @@
 ======
 
 __What .chst is?__
- * Programmable & automated cheatsheets/cheatfiles actions model defintion that can used both for key combinations or typing.
- * Applications cheatsheets/cheatfiles actions with default keybindings or commands
+ * programmable & automated cheatsheets/cheatfiles actions model defintion that can used be both for key combinations or typing
 
+
+__What .chst is not?__
+* [man](http://www.linfo.org/man.html) replacemnt
+* advanced documentation format
 
 .chst how to use:
 -----------------
 (Step 1)
 It is recomended to clone ( or fork and then clone if you plan to have some own customization)  this repo into your ```~/``` directory, or maintain as part of your ```dotfiles```.
 
-e.g
-[rchst](https://github.com/hicolour/rchst) primary will search for cheatsheets/cheatfiles in ```~/.pchst``` &  ```~/.chst``` direcotries, and will prioritize the files from  ```~/.pchst``` - personal chst, the one you may not want to share with whole world.
+.chst browser should  search for cheatsheets/cheatfiles in ```~/.pchst``` &  ```~/.chst``` direcotries, and should prioritize the files from  ```~/.pchst``` - personal chst, the one you may  want to maintain sepretly.
 
 (Step 2)
-It is recomended to use [rchst](https://github.com/hicolour/rchst)application as .chst browser ([rchst](https://github.com/hicolour/rchst) is just tiny [rofi](https://github.com/DaveDavenport/rofi) extension)
+It is recomended to use one of .chst browsers:
+ * [rchst](https://github.com/hicolour/rchst) __launcher style browser__ - just a tiny [rofi](https://github.com/DaveDavenport/rofi) extension
+ Planned:
+ * [dchst](https://github.com/hicolour/dchst) __launcher style browser__ - just a tiny [dmenu](https://github.com/DaveDavenport/rofi) extension
+ * [fchst](https://github.com/hicolour/fchst) __console style browser__ - just tiny command line [demnu](https://tools.suckless.org/dmenu/) extension
+
 
 .chst about itself:
 -----------------
@@ -27,16 +34,17 @@ Key priciples:
  - Single line & simple command
  - Single line, simple & easy searchable intuitive description
 
-This is not inteded to be few-lines per command, or documenetation style formart.
+This is not inteded to be few-lines per command, or documentation style formart.
 
-.chst format/model was orginaly designed mainly for [rofi](https://github.com/DaveDavenport/rofi) - a window switcher & application launcher  , simply more advanced dmenu -  and its extension [rchst](https://github.com/hicolour/rchst).
+.chst format/model was orginaly designed mainly for [rofi](https://github.com/DaveDavenport/rofi) - a window switcher & application launcher, simply more advanced dmenu -  and its extension [rchst](https://github.com/hicolour/rchst).
 
 Format is more or less generic and can be used by any type of software that will be able to cosume it as a source of commands or key combinanations cheatsheets.
 
 .chst alternatives
 -----------------
 
-Documenenation browsing
+Documenenation helepers:
+- [man](http://www.linfo.org/man.html)
 - [zeal](https://github.com/zealdocs/zeal)
 
 
@@ -47,6 +55,8 @@ File format and its versions
 | -------------------------------- |:-------------------------------------------------------------------------:|
 | `0.0.1`                          | ```Category =\|= Subcategory =\|= Command =\|= Description =\|= Action Type```|
 
+
+.chst contract for browsers
 
 Possible on roadmap:
  - Special character e.g. $ that could be used for placeholder for user input (need to verify if it makes sense on daily basis rutine)
