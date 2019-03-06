@@ -93,9 +93,9 @@ git status
 
 Current list of .chst
 ----------------------
-
-- [git](git) -  Git default commands
-- [xmonad](xmonad) - Xmonad Default key bindings
+- [pacman](pacman) - Pacman most usefull commands set
+- [git](git) -  Git most usefull commands set
+- [xmonad](xmonad) - Xmonad all the default key bindings
 
 
 
