@@ -1,0 +1,59 @@
+kubectl =|= view          =|= kubectl get services                                      =|= List all services in the namespace                         =|= type
+kubectl =|= view          =|= kubectl get pods --all-namespaces                         =|= List all pods in all namespaces                            =|= type
+kubectl =|= view          =|= kubectl get pods -o wide                                  =|= List all pods in the namespace, with more details          =|= type
+kubectl =|= view          =|= kubectl get deployment [$mydep]                           =|= List a particular deployment mydep                         =|= input+type
+kubectl =|= view          =|= kubectl get pods --include-uninitialized                  =|= List all pods in the namespace, including uninitialized    =|= type
+kubectl =|= view          =|= kubectl describe nodes [$mynode]                          =|= Describe node with name mynode                             =|= input+type
+kubectl =|= view          =|= kubectl describe pods [$mypod]                            =|= Describe node with name mypod                              =|= input+type
+kubectl =|= view          =|= kubectl get services --sort-by=.metadata.name             =|= List Services Sorted by Name                               =|= type
+kubectl =|= view          =|= kubectl get events --sort-by=.metadata.creationTimestamp  =|= List all pods in the namespace, with more details          =|= type
+
+kubectl =|= update        =|= kubectl set image deployment/f www=image:v2               =|= Rolling update www containers of f deployment              =|= input+type
+kubectl =|= update        =|= kubectl rollout undo deployment/[$f]                      =|= Rollback to the previous deployment                        =|= input+type
+kubectl =|= update        =|= kubectl rollout status -w deployment/[$f]                 =|= Watch rolling update status of f deployment                =|= input+type
+kubectl =|= update        =|= cat [$pod.json] | kubectl replace -f -                    =|= Replace a pod based on the JSON passed into std from pod.json =|= input+type
+kubectl =|= update        =|= kubectl replace --force -f ./$[pod.json]                  =|= Force replace, delete and then re-create the resourc       =|= input+type
+kubectl =|= update        =|= kubectl expose rc nginx --port=80 --target-port=81        =|= Create a service for a replicated nginx                    =|= input+type
+kubectl =|= update        =|= kubectl get pod mypod -o yaml | sed 's/\(image: myimage\):.*$/\1:v4/' | kubectl replace -f -  =|= Update a single-container pod's image version (tag) to v4  =|= input+type
+kubectl =|= update        =|= kubectl label pods my-pod new-label=awesome               =|= Add a Label                                                =|= input+type
+kubectl =|= update        =|= kubectl annotate pods my-pod icon-url=http://goo.gl/XXBTWq  =|=  Add an annotation                                       =|= input+type
+kubectl =|= update        =|= kubectl autoscale deployment foo --min=2 --max=10         =|= Auto scale a deployment "foo"                              =|= input+type
+
+kubectl =|= edit          =|= kubectl edit svc/docker-registry                         =|= Edit the service named docker-registry                      =|= input+type
+kubectl =|= edit          =|= KUBE_EDITOR="nano" kubectl edit svc/docker-registry      =|= Use an alternative editor                                   =|= input+type
+
+kubectl =|= scale         =|= kubectl scale --replicas=3 rs/foo                               =|= Scale a replicaset named 'foo' to 3                              =|= input+type
+kubectl =|= scale         =|= kubectl scale --replicas=3 -f foo.yaml                          =|= Scale a resource specified in "foo.yaml" to 3                      =|= input+type
+kubectl =|= scale         =|= kubectl scale --current-replicas=2 --replicas=3 deployment/[$f] =|= If the deployment named mysql's current size is 2, scale mysql to 3  =|= input+type
+kubectl =|= scale         =|= kubectl scale --replicas=5 rc/foo rc/bar rc/baz                 =|= Scale multiple replication controllers  =|= input+type
+
+kubectl =|= delete        =|= kubectl delete -f ./pod.json                                         =|= Delete a pod using the type and name specified in pod.json                        =|= input+type
+kubectl =|= delete        =|= kubectl delete pod,service baz foo                                   =|= Delete pods and services with same names "baz" and "foo"                         =|= input+type
+kubectl =|= delete        =|= kubectl delete pods,services -l name=myLabel                         =|= Delete pods and services with label name=myLabel                                 =|= input+type
+kubectl =|= delete        =|= kubectl delete pods,services -l name=myLabel --include-uninitialized =|= Delete pods and services, including uninitialized ones, with label name=myLabel  =|= input+type
+kubectl =|= delete        =|= kubectl -n my-ns delete po,svc --all                                 =|= Delete all pods and services, including uninitialized ones, in namespace my-ns,  =|= input+type
+
+kubectl =|= pod           =|= kubectl logs my-pod                                             =|= dump pod logs (stdout)                                                                =|= input+type
+kubectl =|= pod           =|= kubectl logs my-pod --previous                                  =|= dump pod logs (stdout) for a previous instantiation of a container                    =|= input+type
+kubectl =|= pod           =|= kubectl logs my-pod -c my-container                             =|= dump pod container logs (stdout, multi-container case)                                =|= input+type
+kubectl =|= pod           =|= kubectl logs my-pod -c my-container --previous                  =|= dump pod container logs (stdout, multi-container case) for a previous instantiation of a container    =|= input+type
+kubectl =|= pod           =|= kubectl logs -f my-pod                                          =|= stream pod logs (stdout)                                                              =|= input+type
+kubectl =|= pod           =|= kubectl logs -f my-pod -c my-container                          =|= stream pod container logs (stdout, multi-container case)                              =|= input+type
+kubectl =|= pod           =|= kubectl run -i --tty busybox --image=busybox -- sh              =|= Run pod as interactive shell                                                          =|= input+type
+kubectl =|= pod           =|= kubectl attach my-pod -i                                        =|=  Attach to Running Container                                                          =|= input+type
+kubectl =|= pod           =|= kubectl port-forward my-pod 5000:6000                           =|= Listen on port 5000 on the local machine and forward to port 6000 on my-pod           =|= input+type
+kubectl =|= pod           =|= kubectl exec my-pod -- ls /                                     =|=  Run command in existing pod (1 container case)                                       =|= input+type
+kubectl =|= pod           =|= kubectl exec my-pod -c my-container -- ls /                     =|=  Run command in existing pod (multi-container case)                                   =|= input+type
+kubectl =|= pod           =|= kubectl top pod POD_NAME --containers                           =|= Show metrics for a given pod and its containers                                       =|= input+type
+
+
+kubectl =|= node          =|= kubectl cordon [$mynod]                                         =|=  Mark my-node as unschedulable                                                    =|= input+type
+kubectl =|= node          =|= kubectl drain [$mynod]                                          =|=  Drain my-node in preparation for maintenance                                     =|= input+type
+kubectl =|= node          =|= kubectl uncordon [$mynod]                                       =|= Mark my-node as schedulable                                                       =|= input+type
+kubectl =|= node          =|= kubectl top node [$mynod]                                       =|=  Show metrics for a given node                                                    =|= input+type
+
+kubectl =|= cluster       =|= kubectl cluster-info                                            =|=  Display addresses of the master and services            =|= input+type
+kubectl =|= cluster       =|= kubectl cluster-info dump                                       =|=  Dump current cluster state to stdout            =|= input+type
+kubectl =|= cluster       =|= kubectl cluster-info dump --output-directory=[$file]             =|=  Dump current cluster state to /path/to/cluster-state            =|= input+type
+
+kubectl =|= pod           =|= kubectl taint nodes foo dedicated=special-user:NoSchedule       =|= If a taint with that key and effect already exists, its value is replaced as specified.            =|= input+type
