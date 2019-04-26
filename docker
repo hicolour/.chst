@@ -1,0 +1,5 @@
+docker =|= view          =|= docker images                                      =|= List all images                        =|= type
+
+
+
+docker =|= clean         =|= docker images | awk '$1 ~ // { print $3 }' | xargs docker rmi --force  =|= Force delete all images                        =|= type
