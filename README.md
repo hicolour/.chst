@@ -2,6 +2,7 @@
 ======
 
 __What .chst is?__
+
 PDF or HTML cheatsheets are not very usable and if you don't have a lot of spare slots in your memory (as me :) ) you most probably need  interactive easly searchable cheatsheets.
 
 
