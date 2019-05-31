@@ -15,7 +15,7 @@ __What .chst is not?__
 
 __What .chst repository exists or why it's not part of .chst browser ?__
 
-Sometimes it's good to re-invent the wheal.. , but maybe not this time.
+Sometimes it's good to reinvent the wheel.. , but maybe not this time.
 
 If you feel that something could be done better contribute first!
 
