@@ -2,12 +2,25 @@
 ======
 
 __What .chst is?__
- * programmable & automated cheatsheets/cheatfiles actions model defintion that can used be both for key combinations or typing
 
+PDF or HTML cheatsheets are not very usable and if you don't have a lot of spare slots in your memory (as me :) ) you most probably need  interactive easly searchable cheatsheets.
+
+
+ * programmable & automated cheatsheets/cheatfiles actions model defintion that can used be both for key combinations or typing
 
 __What .chst is not?__
 * [man](http://www.linfo.org/man.html) replacemnt
 * advanced documentation format
+
+
+__What .chst repository exists or why it's not part of .chst browser ?__
+
+Sometimes it's good to reinvent the wheel.. , but maybe not this time.
+
+If you feel that something could be done better contribute first!
+
+If you have some personal magic (credentials etc) put ityour personal .chst files .pchst.
+
 
 .chst how to use:
 -----------------
@@ -20,14 +33,14 @@ It is recomended to clone ( or fork and then clone if you plan to have some own 
 It is recomended to use one of .chst browsers:
  * [rchst](https://github.com/hicolour/rchst) __launcher style browser__ - just a tiny [rofi](https://github.com/DaveDavenport/rofi) extension
  Planned:
- * [dchst](https://github.com/hicolour/dchst) __launcher style browser__ - just a tiny [dmenu](https://github.com/DaveDavenport/rofi) extension
- * [fchst](https://github.com/hicolour/fchst) __console style browser__ - just tiny command line [demnu](https://tools.suckless.org/dmenu/) extension
+* [fchst](https://github.com/hicolour/fchst) __console style browser__ - just tiny command line [fzf](https://github.com/junegunn/fzf) extension
+* [dchst](https://github.com/hicolour/dchst) __launcher style browser__ - just a tiny [dmenu](https://github.com/DaveDavenport/rofi) extension
+
 
 
 .chst about itself:
 -----------------
 
-PDF or HTML cheatsheets are not very usable and therfe is strong need for interactive easly searchable cheatsheets.
 As simple as possible, text based cheatsheets are the fundamenetal building block of final solution.
 
 Key priciples:
@@ -51,6 +64,9 @@ Documenenation helepers:
 File format and its versions
 --------
 
+I didn't use .chst extesion in filenames as I beleve this will be redundant information (I'm open for comments) .
+
+
 | File format version              | Format Defintion                                                           |
 | -------------------------------- |:-------------------------------------------------------------------------:|
 | `0.0.1`                          | ```Category =\|= Subcategory =\|= Command =\|= Description =\|= Action Type```|
@@ -62,6 +78,7 @@ Possible on roadmap:
  - Special character e.g. $ that could be used for placeholder for user input (need to verify if it makes sense on daily basis rutine)
  - Action type ```run``` for running application (need to verify if it makes sense on daily basis rutine)
 
+- Utilities script - e.g. to clenaup tabulation
 
 
 Command & Action Type
