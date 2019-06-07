@@ -47,7 +47,10 @@ git =|= log      =|= git log --stat                           =|= Show commit lo
 git =|= log      =|= git log --pretty=oneline                 =|= Show commit logs one per line                         =|= type
 git =|= log      =|= git log --graph                          =|= Show commit logs with ascii graph                     =|= type
 git =|= log      =|= git log --since=1.week                   =|= Show commit log for the last week                     =|= type
-git =|= log      =|= git blame -L [$1-9],[$1-9] [$file]        =|= Show prev commits for each lines [..]-[..] of [$file]  =|= input+type
+git =|= log      =|= git blame -L [$1-9],[$1-9] [$fle]         =|= Show prev commits for each lines [..]-[..] of [$file]  =|= input+type
+git =|= log      =|= git log -p [$fle]                         =|= Show changes over time for specific file                =|= type
+
+git =|= search   =|= git log -S'[$term_in_the_source]'        =|= Search change by content                              =|= type
 
 git =|= undoing  =|= git rm --cached [$file]                   =|= Remove [file] from staging but keep in working         =|= input+type
 git =|= undoing  =|= git checkout -- [$file]                   =|= Discard changes to [file]                              =|= input+type
@@ -55,17 +58,17 @@ git =|= undoing  =|= git reset HEAD [$file]                    =|= Unstage [file
 
 git =|= rew hist =|= git commit --amend                       =|= Replace last commit with whats in staging             =|= type
 git =|= rew hist =|= git commit --amend                       =|= Modify last commit message                            =|= type
-git =|= rew hist =|= git rebase -i HEAD~3                     =|= Make changes to the last 3 commits                    =|= type
+git =|= rew hist =|= git rebase -i HEAD~3                     =|= Make changes to the last 3 commits                    =|= typea
 
-git =|= log      =|= git tag                                  =|= Show available tags                                   =|= type
-git =|= log      =|= git tag -a [$tag]                        =|= Create annotated [tag]                                =|= input+type
-git =|= log      =|= git show [$tag]                          =|= Show info for [tag]                                   =|= input+type
-git =|= log      =|= git tag -s [$tag]                        =|= Create signed [tag]                                   =|= input+type
-git =|= log      =|= git tag [$tag]                           =|= Create lightweight [tag]                              =|= input+type
-git =|= log      =|= git tag -v [$tag]                        =|= Verify signed [tag]                                   =|= input+type
-git =|= log      =|= git tag -a [$tag] [$commit]              =|= Tag previous [commit] with [tag]                      =|= input+type
-git =|= log      =|= git push [$s] [$tag]                     =|= Push [tag] to [s]                                     =|= input+type
-git =|= log      =|= git push [$s] --tags                     =|= Push all local tags to [s]                            =|= input+type
+git =|= tag      =|= git tag                                  =|= Show available tags                                   =|= type
+git =|= tag      =|= git tag -a [$tag]                        =|= Create annotated [tag]                                =|= input+type
+git =|= tag      =|= git show [$tag]                          =|= Show info for [tag]                                   =|= input+type
+git =|= tag      =|= git tag -s [$tag]                        =|= Create signed [tag]                                   =|= input+type
+git =|= tag      =|= git tag [$tag]                           =|= Create lightweight [tag]                              =|= input+type
+git =|= tag      =|= git tag -v [$tag]                        =|= Verify signed [tag]                                   =|= input+type
+git =|= tag      =|= git tag -a [$tag] [$commit]              =|= Tag previous [commit] with [tag]                      =|= input+type
+git =|= tag      =|= git push [$s] [$tag]                     =|= Push [tag] to [s]                                     =|= input+type
+git =|= tag      =|= git push [$s] --tags                     =|= Push all local tags to [s]                            =|= input+type
 
 git =|= stash    =|= git stash                                =|= Stash changes without committing                      =|= type
 git =|= stash    =|= git stash list                           =|= Show stores stashes                                   =|= type
