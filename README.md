@@ -72,6 +72,13 @@ I didn't use .chst extesion in filenames as I beleve this will be redundant info
 | `0.0.1`                          | ```Category =\|= Subcategory =\|= Command =\|= Description =\|= Action Type```|
 
 
+Command special tags: 
+It is possible to use user-input required tag, in command 
+`pacman -Qs [$pkg]` where `[$...]` is special tag and `pkg` is the name/tile of the user input.
+
+In this case chst browser could ask user for input before firing the command.
+
+
 .chst contract for browsers
 
 Possible on roadmap:
