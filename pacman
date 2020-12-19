@@ -3,7 +3,9 @@ pacman =|= basics   =|= sudo pacman -S [$pkg]          =|= Install pkg          
 pacman =|= basics   =|= sudo pacman -R [$pkg]          =|= Remove pkg                                            =|= input+type
 
 pacman =|= remove   =|= sudo pacman -Rs [$pkg]         =|= Remove pkg with its dependencies                      =|= input+type
-pacman =|= remove   =|= sudo pacman -Rns [$pkg]        =|= Remove pkg with its dependencies & sys config files     =|= input+type
+pacman =|= remove   =|= sudo pacman -Rns [$pkg]        =|= Remove pkg with its dependencies & sys config files   =|= input+type
+pacman =|= remove   =|= sudo pacman -Rdd [$pkg]        =|= Remove pkg with ignoring dependencies                 =|= input+type
+pacman =|= remove   =|= sudo pacman -Rc [$pkg]         =|= Remove all pkgs which depend on pkg                   =|= input+type
 
 pacman =|= update   =|= sudo pacman -Syu               =|= Synchronize & update pkgs                             =|= type
 pacman =|= update   =|= sudo pacman -Syu               =|= Force synchronize & update pkgs                       =|= type
@@ -16,7 +18,9 @@ pacman =|= search   =|= pacman -Qs [$pkg]              =|= Search pkg on local r
 
 pacman =|= list     =|= pacman -Q                      =|= List installed pkgs                                   =|= type
 pacman =|= list     =|= pacman -Qe                     =|= List explecitly installed pkgs                        =|= type
+
 pacman =|= list     =|= pacman -Qq                     =|= List installed pkgs without version number            =|= type
 pacman =|= list     =|= pacman -Qn                     =|= List installed pkgs from main repositories            =|= type
 pacman =|= list     =|= pacman -Qm                     =|= List installed pkgs from aur repositories             =|= type
 pacman =|= list     =|= pacman -Qdt                    =|= List orphans / unneeded                               =|= type
+pacman =|= fix      =|= sudo rm /var/lib/pacman/db.lck =|= Fix broken/locked pacman session                      =|= type
